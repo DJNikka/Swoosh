@@ -26,16 +26,18 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qjz-Zs-kYp" customClass="BorderButton" customModule="app_swoosh" customModuleProvider="target">
-                                <rect key="frame" x="62.5" y="597" width="250" height="50"/>
+                                <rect key="frame" x="20" y="597" width="335" height="50"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.4941941352739726" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="250" id="4xA-Gn-sOW"/>
-                                    <constraint firstAttribute="height" constant="50" id="8lm-cd-2ZP"/>
+                                    <constraint firstAttribute="height" constant="50" id="0lE-mA-ADo"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="GET STARTED">
                                     <color key="titleColor" red="0.89793157577514648" green="0.89810711145401001" blue="0.89793020486831665" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="wKA-m3-w9x" kind="show" id="Vq3-bN-eIQ"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="t8N-zs-Gn6">
                                 <rect key="frame" x="66.5" y="130" width="242" height="150.5"/>
@@ -80,12 +82,14 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ZTu-5e-XoF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="12v-ys-rYQ"/>
+                            <constraint firstItem="qjz-Zs-kYp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4hg-3a-S36"/>
                             <constraint firstItem="t8N-zs-Gn6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ImC-ck-bwj"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qjz-Zs-kYp" secondAttribute="bottom" constant="20" id="SW6-Xp-SCM"/>
-                            <constraint firstItem="qjz-Zs-kYp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SYZ-R8-IuZ"/>
                             <constraint firstItem="ZTu-5e-XoF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="UEI-ys-bPq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qjz-Zs-kYp" secondAttribute="bottom" constant="20" id="XdR-X2-E4B"/>
                             <constraint firstItem="t8N-zs-Gn6" firstAttribute="top" secondItem="SjW-lr-v53" secondAttribute="bottom" constant="75" id="aQ8-uw-HKN"/>
                             <constraint firstItem="SjW-lr-v53" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="11" id="kA6-P7-ORa"/>
+                            <constraint firstItem="qjz-Zs-kYp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nus-j8-hDI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qjz-Zs-kYp" secondAttribute="trailing" constant="20" id="oAY-f8-KAa"/>
                             <constraint firstItem="SjW-lr-v53" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ogy-mz-rb7"/>
                             <constraint firstItem="ZTu-5e-XoF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="rRj-cg-bgq"/>
                             <constraint firstItem="ZTu-5e-XoF" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="zPB-EJ-9R8"/>
@@ -190,6 +194,9 @@
                                 <state key="normal" title="Next">
                                     <color key="titleColor" red="0.89793157580000005" green="0.8981071115" blue="0.89793020489999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="rhL-Pv-edx" kind="show" id="qF4-94-kpN"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
